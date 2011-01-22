@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/FundamentalTolerance.csv</file>
+        <file>resources/FundamentalDeviationHole.csv</file>
+        <file>resources/FundamentalDeviationShaft.csv</file>
+        <file>resources/fitView.svg</file>
+    </qresource>
+</RCC>

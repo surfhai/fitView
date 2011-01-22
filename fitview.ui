@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fitView</class>
+ <widget class="QMainWindow" name="fitView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>691</width>
+    <height>277</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>fitView</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Daten.qrc">
+    <normaloff>:/resources/fitView.svg</normaloff>:/resources/fitView.svg</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Daten Eingabe</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <property name="sizeConstraint">
+            <enum>QLayout::SetDefaultConstraint</enum>
+           </property>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_dsbN">
+             <property name="text">
+              <string>Nennmaß</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QDoubleSpinBox" name="dsbN">
+             <property name="suffix">
+              <string> mm</string>
+             </property>
+             <property name="decimals">
+              <number>3</number>
+             </property>
+             <property name="maximum">
+              <double>3150.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_dsbNHole">
+             <property name="text">
+              <string>Bohrung</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QDoubleSpinBox" name="dsbNHole">
+             <property name="suffix">
+              <string> mm</string>
+             </property>
+             <property name="decimals">
+              <number>3</number>
+             </property>
+             <property name="maximum">
+              <double>3150.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QComboBox" name="cbToleranceZoneHole">
+             <property name="editable">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3">
+            <widget class="QComboBox" name="cbToleranceGradeHole">
+             <property name="editable">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_dsbNShaft">
+             <property name="text">
+              <string>Welle</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QDoubleSpinBox" name="dsbNShaft">
+             <property name="suffix">
+              <string> mm</string>
+             </property>
+             <property name="decimals">
+              <number>3</number>
+             </property>
+             <property name="maximum">
+              <double>3150.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2">
+            <widget class="QComboBox" name="cbToleranceZoneShaft">
+             <property name="editable">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="3">
+            <widget class="QComboBox" name="cbToleranceGradeShaft">
+             <property name="editable">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QCheckBox" name="cbN">
+             <property name="text">
+              <string>gleich</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="2">
+            <widget class="QCheckBox" name="uiBasicHole">
+             <property name="text">
+              <string>EInheitsbohrung</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="QCheckBox" name="uiBasicShaft">
+             <property name="text">
+              <string>Einheitswelle</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableWidget">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="rowCount">
+           <number>11</number>
+          </property>
+          <property name="columnCount">
+           <number>2</number>
+          </property>
+          <attribute name="horizontalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderDefaultSectionSize">
+           <number>21</number>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderDefaultSectionSize">
+           <number>21</number>
+          </attribute>
+          <attribute name="horizontalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <column/>
+          <column/>
+          <item row="0" column="0">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignLeft|AlignVCenter</set>
+           </property>
+          </item>
+          <item row="1" column="0">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignLeft|AlignVCenter</set>
+           </property>
+          </item>
+          <item row="2" column="0">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignLeft|AlignVCenter</set>
+           </property>
+          </item>
+          <item row="3" column="0">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignLeft|AlignVCenter</set>
+           </property>
+          </item>
+          <item row="4" column="0">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignLeft|AlignVCenter</set>
+           </property>
+          </item>
+          <item row="5" column="0">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignLeft|AlignVCenter</set>
+           </property>
+          </item>
+          <item row="6" column="0">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignLeft|AlignVCenter</set>
+           </property>
+          </item>
+          <item row="7" column="0">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignLeft|AlignVCenter</set>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QGraphicsView" name="graphicsView">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>1</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>8</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Daten.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>dsbN</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>dsbNHole</receiver>
+   <slot>setValue(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>153</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dsbN</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>dsbNShaft</receiver>
+   <slot>setValue(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>143</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>153</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
