@@ -1,0 +1,6 @@
+*.o
+Makefile
+fitView
+moc_*.cpp
+qrc_*.cpp
+ui_fitview.h
