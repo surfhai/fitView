@@ -139,7 +139,7 @@
            <item row="0" column="0" colspan="2">
             <widget class="QCheckBox" name="uiBasicHole">
              <property name="text">
-              <string>EInheitsbohrung</string>
+              <string>Einheitsbohrung</string>
              </property>
             </widget>
            </item>
