@@ -132,7 +132,6 @@ fitView::fitView(QWidget *parent) :
     QRect *rectangle = new QRect;
     rectangle->setWidth(this->minimumWidth());
     rectangle->setHeight(this->minimumHeight());
-    this->setGeometry(*rectangle);
 
     chart = new ChartScene(f);
     ui->graphicsView->setScene(chart);

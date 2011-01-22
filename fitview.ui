@@ -4,8 +4,6 @@
  <widget class="QMainWindow" name="fitView">
   <property name="geometry">
    <rect>
-    <x>0</x>
-    <y>0</y>
     <width>691</width>
     <height>277</height>
    </rect>
